@@ -1,0 +1,286 @@
+Justin ~
+$ mkdir galaxy_far_far_away
+gmkdir: created directory 'galaxy_far_far_away'
+Justin ~
+$ cd galaxy_far_far_away/
+Justin ~/galaxy_far_far_away
+$ mkdir death_star
+gmkdir: created directory 'death_star'
+Justin ~/galaxy_far_far_away
+$ cd death_star/
+Justin ~/galaxy_far_far_away/death_star
+$ touch darth_vader.txt
+Justin ~/galaxy_far_far_away/death_star
+$ touch princess_leia.txt
+Justin ~/galaxy_far_far_away/death_star
+$ touch storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ mkdir tattooine
+gmkdir: created directory 'tattooine'
+Justin ~/galaxy_far_far_away/death_star
+$ cd tattooine/
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ touch luke.txt ben_kenobi.txt
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ ls
+ben_kenobi.txt  luke.txt
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ mkdir millenium_falcon
+gmkdir: created directory 'millenium_falcon'
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ cd millenium_falcon/
+Justin ~/galaxy_far_far_away/death_star/tattooine/millenium_falcon
+$ touch han_solo.txt chewbaca.txt
+Justin ~/galaxy_far_far_away/death_star/tattooine/millenium_falcon
+$ cd..
+-bash: cd..: command not found
+Justin ~/galaxy_far_far_away/death_star/tattooine/millenium_falcon
+$ cd ..
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ ls
+ben_kenobi.txt  luke.txt  millenium_falcon/
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ mv ben_kenobi.txt obi_wan.txt
+'ben_kenobi.txt' -> 'obi_wan.txt'
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+Justin ~/galaxy_far_far_away/death_star/tattooine
+$ cd ..
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt    storm_trooper.txt
+princess_leia.txt  tattooine/
+Justin ~/galaxy_far_far_away/death_star
+$ open
+Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-b <bundle identifier>] [-a <application>] [filenames] [--args arguments]
+Help: Open opens files from a shell.
+      By default, opens each file using the default application for that file.
+      If the file is in the form of a URL, the file will be opened as a URL.
+Options:
+      -a                Opens with the specified application.
+      -b                Opens with the specified application bundle identifier.
+      -e                Opens with TextEdit.
+      -t                Opens with default text editor.
+      -f                Reads input from standard input and opens with TextEdit.
+      -F  --fresh       Launches the app fresh, that is, without restoring windows. Saved persistent state is lost, excluding Untitled documents.
+      -R, --reveal      Selects in the Finder instead of opening.
+      -W, --wait-apps   Blocks until the used applications are closed (even if they were already running).
+          --args        All remaining arguments are passed in argv to the application's main() function instead of opened.
+      -n, --new         Open a new instance of the application even if one is already running.
+      -j, --hide        Launches the app hidden.
+      -g, --background  Does not bring the application to the foreground.
+      -h, --header      Searches header file locations for headers matching the given filenames, and opens them.
+Justin ~/galaxy_far_far_away/death_star
+$ open .
+Justin ~/galaxy_far_far_away/death_star
+$ pwd
+/Users/Justin/galaxy_far_far_away/death_star
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ cp storm_trooper.txt ../tatooine
+'storm_trooper.txt' -> '../tatooine'
+Justin ~/galaxy_far_far_away/death_star
+$ cd ../tatooine
+-bash: cd: ../tatooine: Not a directory
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ pwd
+/Users/Justin/galaxy_far_far_away
+Justin ~/galaxy_far_far_away
+$ cd tatooine
+-bash: cd: tatooine: Not a directory
+Justin ~/galaxy_far_far_away
+$ cd tatooine/
+Justin ~/galaxy_far_far_away/tatooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+Justin ~/galaxy_far_far_away/tatooine
+$ mv luke.txt obi_wan.txt millenium_falcon/
+'luke.txt' -> 'millenium_falcon/luke.txt'
+'obi_wan.txt' -> 'millenium_falcon/obi_wan.txt'
+Justin ~/galaxy_far_far_away/tatooine
+$ ls
+millenium_falcon/
+Justin ~/galaxy_far_far_away/tatooine
+$ cd millenium_falcon/
+Justin ~/galaxy_far_far_away/tatooine/millenium_falcon
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt  obi_wan.txt
+Justin ~/galaxy_far_far_away/tatooine/millenium_falcon
+$ cd ..
+Justin ~/galaxy_far_far_away/tatooine
+$ mv millenium_falcon/ ../death_star/
+'millenium_falcon/' -> '../death_star/millenium_falcon'
+Justin ~/galaxy_far_far_away/tatooine
+$ cd..
+-bash: cd..: command not found
+Justin ~/galaxy_far_far_away/tatooine
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ ls
+death_star/  tatooine/
+Justin ~/galaxy_far_far_away
+$ cd death_star/
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt    princess_leia.txt
+millenium_falcon/  storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ mv princess_leia.txt millenium_falcon/
+'princess_leia.txt' -> 'millenium_falcon/princess_leia.txt'
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ cd tatooine/
+Justin ~/galaxy_far_far_away/tatooine
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ cd death_star/
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt  millenium_falcon/  storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ cd millenium_falcon/
+Justin ~/galaxy_far_far_away/death_star/millenium_falcon
+$ ls
+chewbaca.txt  luke.txt     princess_leia.txt
+han_solo.txt  obi_wan.txt
+Justin ~/galaxy_far_far_away/death_star/millenium_falcon
+$ rm obi_wan.txt
+removed 'obi_wan.txt'
+Justin ~/galaxy_far_far_away/death_star/millenium_falcon
+$ cd ../..
+Justin ~/galaxy_far_far_away
+$ mkdir yavin_4
+gmkdir: created directory 'yavin_4'
+Justin ~/galaxy_far_far_away
+$ mv death_star/millenium_falcon/ yavin_4/
+'death_star/millenium_falcon/' -> 'yavin_4/millenium_falcon'
+Justin ~/galaxy_far_far_away
+$ mkdir yavin_4/x_wing
+gmkdir: created directory 'yavin_4/x_wing'
+Justin ~/galaxy_far_far_away
+$ ls
+death_star/  tatooine/  yavin_4/
+Justin ~/galaxy_far_far_away
+$ cd death_star/
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt  storm_trooper.txt
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ mv yavin_4/millenium_falcon/princess_leia.txt yavin_4/
+'yavin_4/millenium_falcon/princess_leia.txt' -> 'yavin_4/princess_leia.txt'
+Justin ~/galaxy_far_far_away
+$ mv yavin_4/millenium_falcon/luke.txt yavin_4/x_wing/'yavin_4/millenium_falcon/luke.txt' -> 'yavin_4/x_wing/luke.txt'
+Justin ~/galaxy_far_far_away
+$ cd yavin_4/
+Justin ~/galaxy_far_far_away/yavin_4
+$ mv millenium_falcon x_wing/ galaxy_far_far_away
+gmv: target 'galaxy_far_far_away' is not a directory
+Justin ~/galaxy_far_far_away/yavin_4
+$ pwd
+/Users/Justin/galaxy_far_far_away/yavin_4
+Justin ~/galaxy_far_far_away/yavin_4
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ mv yavin_4/millenium_falcon yavin_4/x_wing .
+'yavin_4/millenium_falcon' -> './millenium_falcon'
+'yavin_4/x_wing' -> './x_wing'
+Justin ~/galaxy_far_far_away
+$ cd death_star
+Justin ~/galaxy_far_far_away/death_star
+$ pwd
+/Users/Justin/galaxy_far_far_away/death_star
+Justin ~/galaxy_far_far_away/death_star
+$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+gmkdir: created directory 'tie_fighter_1'
+gmkdir: created directory 'tie_fighter_2'
+gmkdir: created directory 'tie_fighter_3'
+Justin ~/galaxy_far_far_away/death_star
+$ ls
+darth_vader.txt    tie_fighter_1/  tie_fighter_3/
+storm_trooper.txt  tie_fighter_2/
+Justin ~/galaxy_far_far_away/death_star
+$ mv darth_vader.txt tie_fighter_1/
+'darth_vader.txt' -> 'tie_fighter_1/darth_vader.txt'
+Justin ~/galaxy_far_far_away/death_star
+$ ..
+-bash: ..: command not found
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ pwd
+/Users/Justin/galaxy_far_far_away
+Justin ~/galaxy_far_far_away
+$ cd death_star
+Justin ~/galaxy_far_far_away/death_star
+$ cp storm_trooper.txt tie_fighter_2
+'storm_trooper.txt' -> 'tie_fighter_2/storm_trooper.txt'
+Justin ~/galaxy_far_far_away/death_star
+$ cp storm_trooper.txt tie_fighter_3
+'storm_trooper.txt' -> 'tie_fighter_3/storm_trooper.txt'
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ pwd
+/Users/Justin/galaxy_far_far_away
+Justin ~/galaxy_far_far_away
+$ cd death_star
+Justin ~/galaxy_far_far_away/death_star
+$ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ..
+'tie_fighter_1' -> '../tie_fighter_1'
+'tie_fighter_2' -> '../tie_fighter_2'
+'tie_fighter_3' -> '../tie_fighter_3'
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ ls
+death_star/    tie_fighter_1/  x_wing/
+millenium_falcon/  tie_fighter_2/  yavin_4/
+tatooine/    tie_fighter_3/
+Justin ~/galaxy_far_far_away
+$ rm tie_fighter_2 tie_fighter_3
+grm: cannot remove 'tie_fighter_2': Is a directory
+grm: cannot remove 'tie_fighter_3': Is a directory
+Justin ~/galaxy_far_far_away
+$ rm -rf tie_fighter_2 tie_fighter_3
+removed 'tie_fighter_2/storm_trooper.txt'
+removed directory 'tie_fighter_2'
+removed 'tie_fighter_3/storm_trooper.txt'
+removed directory 'tie_fighter_3'
+Justin ~/galaxy_far_far_away
+$ pwd
+/Users/Justin/galaxy_far_far_away
+Justin ~/galaxy_far_far_away
+$ cd death_star
+Justin ~/galaxy_far_far_away/death_star
+$ rm -rf death_star
+Justin ~/galaxy_far_far_away/death_star
+$ cd galaxy_far_far_away
+-bash: cd: galaxy_far_far_away: No such file or directory
+Justin ~/galaxy_far_far_away/death_star
+$ cd ..
+Justin ~/galaxy_far_far_away
+$ rm -rf death_star
+removed 'death_star/.DS_Store'
+removed 'death_star/storm_trooper.txt'
+removed directory 'death_star'
+Justin ~/galaxy_far_far_away
+$ ls
+millenium_falcon/  tie_fighter_1/  yavin_4/
+tatooine/    x_wing/
+Justin ~/galaxy_far_far_away
+$ mv x_wing millenium_falcon yavin_4
+'x_wing' -> 'yavin_4/x_wing'
+'millenium_falcon' -> 'yavin_4/millenium_falcon'
+Justin ~/galaxy_far_far_away
+$

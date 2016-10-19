@@ -1,0 +1,7 @@
+get patronAge
+	if patronAge >= 65
+		patronPrice = $6
+	elseif patronAge is < 25
+		patronPrice = $8
+	else
+		patronPrice = $10
